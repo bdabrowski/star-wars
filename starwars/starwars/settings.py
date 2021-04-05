@@ -3,7 +3,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0gvm9j_*1o3x0ppk4fr2gci&_3m%m&=7p*01y$ic=up-^fsun!'
 DEBUG = True
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0']
 INSTALLED_APPS = [
     'explorer.apps.ExplorerConfig',
 ]
