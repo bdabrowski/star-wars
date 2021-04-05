@@ -4,9 +4,9 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-lateset
+    runs-on: ubuntu-latest
     steps:
-      - usees: actions/checkout@v1
+      - uses: actions/checkout@v1
       - name: Build project
         run: docker-compose build
       - name: Build database
