@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  explorer:
+    build: .
+    image: starwars
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/opt/services/star-wars/
+
+  migrate:
+    image: starwars
+    command: python manage.py migrate
+    volumes:
+      - .:/opt/services/star-wars/
+
+  test:
+    image: starwars
+    command: python manage.py test
