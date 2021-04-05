@@ -2,6 +2,7 @@
 
 Welcome to star-wars explorer project.
 
+![Actions Status](https://github.com/bdabrowski/star-wars/actions/workflows/pythonapp.yaml/badge.svg)
 ## Build image and container 
 
     docker-compose build
